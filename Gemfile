@@ -5,6 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'mini_magick', '~> 4.8'
+gem 'image_processing', '~> 1.2'
 gem 'hirb', '~> 0.7.3'
 gem 'shrine', '~> 2.11'
 gem 'mailgun_rails', '~> 0.9.0'
