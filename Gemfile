@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'hirb', '~> 0.7.3'
 gem 'shrine', '~> 2.11'
 gem 'mailgun_rails', '~> 0.9.0'
 gem 'stripe', '~> 3.13'
