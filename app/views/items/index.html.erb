@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Antiques</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Condition</th>
+      <th>Manufacture</th>
+      <th>Manufacture date</th>
+      <th>Image data</th>
+      <th>Dimension</th>
+      <th>Weight</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.name %></td>
+        <td><%= item.description %></td>
+        <td><%= item.condition %></td>
+        <td><%= item.manufacture %></td>
+        <td><%= item.manufacture_date %></td>
+        <td><%= item.image_data %></td>
+        <td><%= item.dimension %></td>
+        <td><%= item.weight %></td>
+        <td><%= item.user %></td>
+        <td><%= link_to 'Show', item %></td>
+        <td><%= link_to 'Edit', edit_item_path(item) %></td>
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item', new_item_path %>

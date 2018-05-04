@@ -1,0 +1,30 @@
+require 'rails_helper'
+
+RSpec.describe "items/show", type: :view do
+  before(:each) do
+    @item = assign(:item, Item.create!(
+      :name => "Name",
+      :description => "MyText",
+      :condition => "MyText",
+      :manufacture => "MyText",
+      :manufacture_date => "MyText",
+      :image_data => "MyText",
+      :dimension => "MyText",
+      :weight => "9.99",
+      :user => nil
+    ))
+  end
+
+  it "renders attributes in <p>" do
+    render
+    expect(rendered).to match(/Name/)
+    expect(rendered).to match(/MyText/)
+    expect(rendered).to match(/MyText/)
+    expect(rendered).to match(/MyText/)
+    expect(rendered).to match(/MyText/)
+    expect(rendered).to match(/MyText/)
+    expect(rendered).to match(/MyText/)
+    expect(rendered).to match(/9.99/)
+    expect(rendered).to match(//)
+  end
+end
