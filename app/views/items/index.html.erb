@@ -17,26 +17,28 @@
       <th colspan="3"></th>
     </tr>
   </thead>
+  </table>
 
-  <tbody>
+  <images>
     <% @items.each do |item| %>
-      <tr>
-        <td><%= item.name %></td>
-        <td><%= item.description %></td>
-        <td><%= item.condition %></td>
-        <td><%= item.manufacture %></td>
-        <td><%= item.manufacture_date %></td>
-        <td><%= item.image_data %></td>
-        <td><%= item.dimension %></td>
-        <td><%= item.weight %></td>
-        <td><%= item.user %></td>
-        <td><%= link_to 'Show', item %></td>
-        <td><%= link_to 'Edit', edit_item_path(item) %></td>
-        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+
+      <div>
+         <%= item.name %><br/>
+         <%= item.description %><br/>
+         <%= item.condition %><br/>
+         <%= item.manufacture %><br/>
+         <%= item.manufacture_date %><br/>
+         <%= image_tag item.image[:medium].url%><br/>
+         <%= item.dimension %><br/>
+         <%= item.weight %><br/>
+         <%= item.user.email %><br/>
+         <%= link_to 'Show', item %><br/>
+         <%= link_to 'Edit', edit_item_path(item) %><br/>
+         <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %><br/>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </images>
+
 
 <br>
 
