@@ -27,7 +27,10 @@
 
 <p>
   <strong>Image data:</strong>
-  <%= @item.image_data %>
+  <% if @item.image.present? %>
+    <%= image_tag @item.image[:medium].url %>
+  <% end %>
+
 </p>
 
 <p>
