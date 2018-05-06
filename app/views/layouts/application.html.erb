@@ -10,9 +10,16 @@
 
   <body>
 
+  <%= render 'pages/partials/header'%>
+      <main>
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
        
+       <% if current_user %>
+         <%= current_user.inspect%>
+         <%= current_user.email %>
+       <% end %>
     <%= yield %>
+    </main>
   </body>
 </html>

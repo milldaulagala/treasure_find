@@ -1,0 +1,17 @@
+<h1>Treasure Find</h1>
+<p> The Treasure is already with you. Let us help you discover it. </p>
+
+<%= link_to 'List Your Treasure', new_item_path%>
+
+
+    <images>
+        <% @firstfive.each do |image| %>
+            <div>
+                
+                <%= image.name %><br/>
+                <%= image.description %><br/>
+                <%= link_to (image_tag image.image[:medium].url), image%>
+
+            </div>    
+        <%end%>
+    </images>
