@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Appraisals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>Value</th>
+      <th>User</th>
+      <th>Item</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @appraisals.each do |appraisal| %>
+      <tr>
+        <td><%= appraisal.content %></td>
+        <td><%= appraisal.value %></td>
+        <td><%= appraisal.user %></td>
+        <td><%= appraisal.item %></td>
+        <td><%= link_to 'Show', appraisal %></td>
+        <td><%= link_to 'Edit', edit_appraisal_path(appraisal) %></td>
+        <td><%= link_to 'Destroy', appraisal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Appraisal', new_appraisal_path %>
