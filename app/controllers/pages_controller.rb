@@ -4,7 +4,7 @@ class PagesController < ApplicationController
 
   def home
 
-    @firstfive =  Item.all.order(created_at: :desc).limit(4)
+    @firstfive =  Item.all.order(created_at: :desc).limit(6)
 
   end
 end

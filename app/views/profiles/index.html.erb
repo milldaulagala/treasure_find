@@ -2,39 +2,27 @@
 
 <h1>Profiles</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>First name</th>
-      <th>Last name</th>
-      <th>Address</th>
-      <th>Image data</th>
-      <th>Introduction</th>
-      <th>Mobile</th>
-      <th>Category</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+
+  <images>
     <% @profiles.each do |profile| %>
-      <tr>
-        <td><%= profile.first_name %></td>
-        <td><%= profile.last_name %></td>
-        <td><%= profile.address %></td>
-        <td><%= profile.image_data %></td>
-        <td><%= profile.introduction %></td>
-        <td><%= profile.mobile %></td>
-        <td><%= profile.category %></td>
-        <td><%= profile.user %></td>
-        <td><%= link_to 'Show', profile %></td>
-        <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
-        <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div>
+        <%= profile.first_name %><br/>
+        <%= profile.last_name %><br/>
+        <%= profile.address %><br/>
+        <%= image_tag profile.image[:medium].url%><br/>
+        
+        <%= profile.introduction %><br/>
+        <%= profile.mobile %><br/>
+        <%= profile.category.name %><br/>
+        <%= profile.user.email %><br/>
+        <%= link_to 'Show', profile %><br/>
+        <%= link_to 'Edit', edit_profile_path(profile) %><br/>
+        <%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %><br/>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </images>
+
 
 <br>
 

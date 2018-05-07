@@ -50,3 +50,8 @@
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>
+
+<%= form_with model: @item, url: new_item_path, method: :get, local: true do |form| %>
+  <%= form.hidden_field :id %>
+  <%= form.submit "Make Appraisal" %>
+<% end %>

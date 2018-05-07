@@ -42,9 +42,7 @@
   
 
   <div class="field">
-    <% if item.image.present? %>
-    <%= image_tag item.image_url %>
-    <% end %>
+    
 
     <%= form.label :image %>
     <%= form.hidden_field :image, value: @item.cached_image_data %>
@@ -61,10 +59,7 @@
     <%= form.text_field :weight, id: :item_weight %>
   </div>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id, id: :item_user_id %>
-  </div>
+  
 
   <div class="actions">
     <%= form.submit %>

@@ -16,8 +16,13 @@
 </p>
 
 <p>
+
   <strong>Image data:</strong>
-  <%= @profile.image_data %>
+  <% if @profile.image.present? %>
+    <%= image_tag @profile.image[:medium].url %>
+  <% end %>
+
+  
 </p>
 
 <p>
@@ -32,12 +37,12 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @profile.category %>
+  <%= @profile.category.name %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @profile.user %>
+  <%= @profile.user.email %>
 </p>
 
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
