@@ -14,13 +14,13 @@
          <%= item.condition %><br/>
          <%= item.manufacture %><br/>
          <%= item.manufacture_date %><br/>
-         <%= image_tag item.image[:medium].url%><br/>
+         <%= link_to (image_tag item.image[:medium].url), item %><br/>
          <%= item.dimension %><br/>
          <%= item.weight %><br/>
          <%= item.user.email %><br/>
-         <%= link_to 'Show', item %><br/>
+         
          <%= link_to 'Edit', edit_item_path(item) %><br/>
-         <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %><br/>
+        
       </div>
     <% end %>
   </images>
