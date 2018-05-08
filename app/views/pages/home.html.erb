@@ -1,6 +1,20 @@
 <h1>Treasure Find</h1>
 <p> The Treasure is already with you. Let us help you discover it. </p>
 
+
+<div>
+
+    <%= form_with scope: :items, method: :get, local:true do |f| %>
+
+    <%= f.label :search_item_name %> 
+    <%= f.text_field :search %>
+
+    <%= f.submit :search %>
+
+    <% end %>
+
+</div>
+
 <%= link_to 'List Your Treasure', new_item_path%>
 
 

@@ -4,7 +4,19 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @items = Item.all
+    
+
+    unless params[:items].present?
+
+      @items = Item.all
+  
+      else
+  
+        item_name = params[:items][:search]
+        @items = Item.search_by_name(item_name)
+  
+      end
+
   end
 
   # GET /items/1
@@ -64,6 +76,9 @@ class ItemsController < ApplicationController
     end
   end
 
+  
+ 
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_item

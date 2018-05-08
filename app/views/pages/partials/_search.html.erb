@@ -1,0 +1,12 @@
+<div>
+
+    <%= form_with scope: :items, method: :get, local:true do |f| %>
+
+    <%= f.label :search_item_name %> 
+    <%= f.text_field :search %>
+
+    <%= f.submit :search %>
+
+    <% end %>
+
+</div>
