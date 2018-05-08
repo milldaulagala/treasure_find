@@ -21,8 +21,7 @@
     <%= form.text_field :value, id: :appraisal_value %>
   </div>
 
-  
-
+  <%= form.hidden_field :item_id, value: appraisal.item_id %>
 
   <div class="actions">
     <%= form.submit %>

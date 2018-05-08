@@ -15,7 +15,7 @@ class AppraisalsController < ApplicationController
   # GET /appraisals/new
   def new
     @current_item = Item.find(params[:item][:id])
-    @appraisal = Appraisal.new
+    @appraisal = Appraisal.new(item_id: @current_item.id)
   end
 
   # GET /appraisals/1/edit
@@ -25,10 +25,9 @@ class AppraisalsController < ApplicationController
   # POST /appraisals
   # POST /appraisals.json
   def create
-    current_item = Item.find_by(params[:item_id])
     @appraisal = Appraisal.new(appraisal_params)
     @appraisal.user_id = current_user.id
-    @appraisal.item_id = current_item.id
+    puts "APPRAISAL = #{@appraisal.item_id}"
 
     respond_to do |format|
       if @appraisal.save
@@ -73,6 +72,6 @@ class AppraisalsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def appraisal_params
-      params.require(:appraisal).permit(:content, :value)
+      params.require(:appraisal).permit(:content, :value, :item_id)
     end
 end

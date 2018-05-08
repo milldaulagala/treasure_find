@@ -3,6 +3,8 @@
 <%= @current_item.id %> <br/>
 <%= @current_item.name %>
 <p>
+<h2><%= @appraisal.item_id %></h2>
+
   <strong></strong>
   <% if @current_item.image.present? %>
     <%= image_tag @current_item.image[:medium].url %>
