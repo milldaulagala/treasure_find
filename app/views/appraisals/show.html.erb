@@ -1,7 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Content:</strong>
+
+  <%= image_tag @appraisal.item.image[:medium].url%>
+
+</p>
+
+
+<p>
+  <strong>Appraisal:</strong>
   <%= @appraisal.content %>
 </p>
 
@@ -12,12 +19,17 @@
 
 <p>
   <strong>User:</strong>
-  <%= @appraisal.user %>
+  <%= @appraisal.user.email %>
 </p>
 
 <p>
   <strong>Item:</strong>
-  <%= @appraisal.item %>
+  <%= @appraisal.item.name %>
+</p>
+
+<p>
+  <strong>Item number:</strong>
+  <%= @appraisal.item.id %>
 </p>
 
 <%= link_to 'Edit', edit_appraisal_path(@appraisal) %> |

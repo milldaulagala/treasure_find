@@ -15,7 +15,7 @@ class ItemsController < ApplicationController
   # GET /items/new
   def new
     # @params = params
-    @current_item = Item.find(params[:item][:id])
+    #@current_item = Item.find(params[:item][:id])
     @item = Item.new
   end
 

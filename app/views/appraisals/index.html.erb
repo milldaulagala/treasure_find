@@ -18,8 +18,8 @@
       <tr>
         <td><%= appraisal.content %></td>
         <td><%= appraisal.value %></td>
-        <td><%= appraisal.user %></td>
-        <td><%= appraisal.item %></td>
+        <td><%= appraisal.user.email %></td>
+        <td><%= appraisal.item.name %></td>
         <td><%= link_to 'Show', appraisal %></td>
         <td><%= link_to 'Edit', edit_appraisal_path(appraisal) %></td>
         <td><%= link_to 'Destroy', appraisal, method: :delete, data: { confirm: 'Are you sure?' } %></td>

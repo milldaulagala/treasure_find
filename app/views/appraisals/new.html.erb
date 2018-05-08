@@ -1,5 +1,15 @@
 <h1>New Appraisal</h1>
 
+<%= @current_item.id%> <br/>
+<%= @current_item.name %>
+<p>
+  <strong></strong>
+  <% if @current_item.image.present? %>
+    <%= image_tag @current_item.image[:medium].url %>
+  <% end %>
+
+</p>
+
 <%= render 'form', appraisal: @appraisal %>
 
 <%= link_to 'Back', appraisals_path %>
