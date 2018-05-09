@@ -1,10 +1,10 @@
 /* Primary stylesheet */
 
 /* Colors */
-$red: #993120;
+$red: #791E20;
 $green: #94B26F;
 $light_green: #B6D491;
-$yellow: #F2DC87;
+$yellow: #F0E0A6;
 $dark_brown: #332318;
 $light_brown: #4C2516;
 $white: #FFFFFF;
@@ -46,13 +46,13 @@ a:hover { text-decoration: underline; }
 
 /* Structure */
 #header {
-  height: 7em;
+  height: 8em;
   padding-top: 1em;
   text-align: center;
   background: $red;
   color: $white;
 
-  h1 { margin: 0; padding: 0; }
+  h1 { margin: 0; padding: 10px; }
 }
 
 #main {
