@@ -10,9 +10,15 @@
 
   <body>
 
-  <%= render 'pages/partials/header'%>
-  <%= render 'pages/partials/search'%>
-      <main>
+    <div id="header">
+        <h1>TreasureFind</h1>
+    
+
+        <%= render 'pages/partials/header'%>
+        <%= render 'pages/partials/search'%>
+      </div>
+
+      <div id="main">
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
        
@@ -20,7 +26,13 @@
          <%= current_user.inspect%>
          <%= current_user.email %>
        <% end %>
-    <%= yield %>
-    </main>
+      
+          <div id="content">
+            <%= yield %>
+          </div>
+      </div>
+      <div id="footer">
+        <p id="copyright"> </p>
+      </div>
   </body>
 </html>

@@ -18,7 +18,7 @@ Treasure Find is for fans of antiques and collectables. It is a two-sided market
 - **[Controllers](#Controllers)**
 - **[Mood Board](#Moodboard)**
 - **[Inspiration](#Inspiration)**
-- **[Wireframes](#Wireframes)**
+- **[Figma Wireframes](#Wireframes)**
 - **[Features](#Features)**
 - **[Ruby Gems](#RubyGem)**
 - **[Challenges](#Challenges)**
