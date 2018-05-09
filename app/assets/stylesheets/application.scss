@@ -10,12 +10,25 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ 
  *= require_tree .
  *= require primary
  *= require_self
  */
 
+ 
+ $red: #791E20;
+ $green: #94B26F;
+ $light_green: #B6D491;
+ $yellow: #F0E0A6;
+ $dark_brown: #332318;
+ $light_brown: #4C2516;
+ $white: #FFFFFF;
+ 
+
+
  nav {
+    color: $white; 
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -41,3 +54,40 @@ appraisals {
 
 
 }
+
+.form {
+    min-height: 3em;
+}
+
+.btn {
+    font-size: 1em;
+    border: none;
+    padding: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    cursor: pointer;
+}
+
+.btn .btn-primary {
+    color: $white;
+    background: $dark_brown;
+}
+
+.btn .btn-primary:hover {
+    color: $white;
+    background: $green;
+}
+
+.btn .btn-secondary {
+    color: $white;
+    background: $green;
+}
+
+.btn .btn-secondary:hover {
+    color: $white;
+    background: $dark_brown;
+}
+
+form {
+    min-height: 3em;
+  }

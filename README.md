@@ -1,7 +1,7 @@
 # README
 
 # Treasure Find Marketplace
-## https://comic-culture-marketplace.herokuapp.com
+## https://floating-coast-28442.herokuapp.com/
 
 Treasure Find is for fans of antiques and collectables. It is a two-sided marketplace for antiques and collectables enthusiasts. Treasure Find has an Antiques and collectable Appraisals section. This Appraisal system helps users to find how much the item is actually worth. This website will be the place where antique enthusiastic, like minded people get together. They can offer a price to the listed vintage item. The users have to send a buy request if they are interested to buy antique or collectable items. 
 
@@ -88,9 +88,130 @@ The ERD is the most important section of this rails project. It took me some tim
 
 ![](/docs/images/ERD.png)
 
+## <a id="Models"></a>Models
+```
+
+Appraisal
+
+     - content : text
+     - value  : decimal
+     - user_id: bigint
+     - item_id: bigint
+     - created_at: datetime
+     - updated_at: datetime
+    
+    
+  
+
+Category
+    - name : string  
+    - description : text 
+    - item_id : bigint 
+    - created_at : datetime
+    - updated_at : datetime 
+    
+  
+
+Item
+    - name : string
+    - description : text
+    - condition : text
+    - manufacture : text
+    - manufacture_date : text
+    - image_data : text
+    - dimension : text
+    - weight : decimal
+    - user_id : bigint
+    - created_at : datetime
+    - updated_at : datetime
+    
+  
+
+Photo
+     - image_data : text
+     - item_id : bigint
+     - created_at : datetime
+     - updated_at : datetime
+    
 
 
+Profile
 
+     - first_name : string
+     - last_name : string
+     - address : text
+     - image_data : text
+     - introduction : text
+     - mobile : text
+     - category_id : bigint
+     - user_id : bigint
+     - created_at : datetime
+     - updated_at : datetime
+    
+  
+
+  User
+
+     - email : string
+     - encrypted_password : string
+     - reset_password_token : string
+     - reset_password_sent_at : datetime
+     - remember_created_at : datetime
+     - sign_in_count : integer
+     - current_sign_in_at : datetime
+     - last_sign_in_at : datetime
+     - current_sign_in_ip : inet
+     - last_sign_in_ip : inet
+     - created_at : datetime
+     - updated_at : datetime
+
+```
+
+## <a id="Controllers"></a>Controllers
+```
+Profiles Controller
+- show
+- new
+- edit
+- create
+- update
+- destroy
+
+Items Controller
+- index
+- List
+- show
+- new
+- edit
+- create
+- update
+- destroy
+- appraise
+
+Appraisals Controller
+
+- index
+- appraise
+- show
+- new
+- edit
+- create
+- update
+- destroy
+
+
+Pages Controller
+
+- index
+- home
+```
+## <a id="Moodboard"></a>Mood Board
+
+My mood board is consist of rare antiques and collectables. Antique auctions and markets. The places where like minded people get together. Most of the times i focused on the antiques and appraisers who have knowledge related to the antiques and collectable items.
+
+[Mood Board - Treasure Find](https://www.pinterest.com.au/mdaulagala/antiques-and-collectables/sterling-silver/)
+
+![](/docs/images/moodboard.png)
 
 
 

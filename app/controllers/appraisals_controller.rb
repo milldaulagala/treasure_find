@@ -14,8 +14,8 @@ class AppraisalsController < ApplicationController
 
   # GET /appraisals/new
   def new
-    @current_item = Item.find(params[:item][:id])
-    @appraisal = Appraisal.new(item_id: @current_item.id)
+    @item = Item.find(params[:item][:id])
+    @appraisal = Appraisal.new(item: @item)
   end
 
   # GET /appraisals/1/edit
@@ -26,7 +26,7 @@ class AppraisalsController < ApplicationController
   # POST /appraisals.json
   def create
     @appraisal = Appraisal.new(appraisal_params)
-    @appraisal.user_id = current_user.id
+    @appraisal.user = current_user
     puts "APPRAISAL = #{@appraisal.item_id}"
 
     respond_to do |format|
@@ -74,4 +74,6 @@ class AppraisalsController < ApplicationController
     def appraisal_params
       params.require(:appraisal).permit(:content, :value, :item_id)
     end
+
+    
 end

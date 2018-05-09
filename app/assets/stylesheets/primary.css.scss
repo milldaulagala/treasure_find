@@ -114,3 +114,36 @@ a:hover { text-decoration: underline; }
 #content h2 {
   color: $light_brown;
 }
+
+form {
+  min-height: 2em;
+}
+
+.btn {
+    font-size: 1em;
+    border: none;
+    padding: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: $white;
+    background: $dark_brown;
+}
+
+.btn-primary:hover {
+    color: $white;
+    background: $dark_brown;
+}
+
+.btn-secondary {
+    color: $white;
+    background: $green;
+}
+
+.btn-secondary:hover {
+    color: $green;
+    background: $white;
+}

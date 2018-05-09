@@ -1,17 +1,17 @@
 <h1>New Appraisal</h1>
 
-<%= @current_item.id %> <br/>
-<%= @current_item.name %>
+<%= @item.id %> <br/>
+<%= @item.name %>
 <p>
 <h2><%= @appraisal.item_id %></h2>
 
   <strong></strong>
-  <% if @current_item.image.present? %>
-    <%= image_tag @current_item.image[:medium].url %>
+  <% if @item.image.present? %>
+    <%= image_tag @item.image[:medium].url %>
   <% end %>
 
 </p>
 
 <%= render 'form', appraisal: @appraisal %>
 
-<%= link_to 'Back', appraisals_path %>
+<%= link_to 'Back', appraisals_path, class: 'btn btn-primary' %>
