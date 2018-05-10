@@ -26,7 +26,7 @@
 </p>
 
 <p>
-  <strong>Image data:</strong>
+  <strong> </strong>
   <% if @item.image.present? %>
     <%= image_tag @item.image[:medium].url %>
   <% end %>
@@ -44,7 +44,7 @@
 </p>
 
 <p>
-  <strong>User:</strong>
+  <strong>Owner email:</strong>
   <%= @item.user.email %>
 </p>
 
@@ -59,13 +59,24 @@
 <% end %>
 </ul>
 
+<div>
+  
+  <ul>
+<% @appraisals.each do |appraisal| %>
+  <li><%= appraisal.content %></li>
+<% end %>
+</ul>
+
+
+</div>
+
 
 
 
 <%= form_with model: @item, url: new_appraisal_path, method: :get, local: true, class: 'form' do |form| %>
   <%= form.hidden_field :id %>
-  <%= form.submit "Make Appraisal", class: 'btn btn-secondary' %>
+  <%= form.submit " Make Appraisal ", class: 'btn btn-secondary' %>
 <% end %>
 
 <%= link_to 'Edit', edit_item_path(@item), class: 'btn btn-primary' %> |
-<%= link_to 'Back', items_path %>
+<%= link_to 'Back', items_path, class: 'btn btn-primary' %>

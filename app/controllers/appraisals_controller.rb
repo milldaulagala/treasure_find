@@ -31,7 +31,7 @@ class AppraisalsController < ApplicationController
 
     respond_to do |format|
       if @appraisal.save
-        format.html { redirect_to @appraisal, notice: 'Appraisal was successfully created.' }
+        format.html { redirect_to item_path(@appraisal.item_id), notice: 'Appraisal was successfully created.' }
         format.json { render :show, status: :created, location: @appraisal }
       else
         format.html { render :new }

@@ -29,15 +29,22 @@ Treasure Find is for fans of antiques and collectables. It is a two-sided market
 
 ## <a id="Problem"></a>Problem
 
-There are many antiques and collecables enthusiasts around the world. Most of the times they own valuable collectable pieces. They love to know the value of the item. Unfortunately there aren't many places to get an appraisal for the item.
-On the other hand there are many antiques and collecables enthusiasts who has an excellent knowledge about these items. They are willing to share their knowledge. They are looking for a proper platform to share their knowledge and experience.  
+There are many antiques and collecables enthusiasts around the world. Most of the times they own valuable collectable pieces. They love to know the value of the item. Unfortunately there aren't many places to get an appraisal for the item. 
+
+On the other hand there are many antiques and collecables enthusiasts, professional appraisers who has an excellent knowledge about these items. They are willing to share their knowledge. They are looking for a proper platform to share their knowledge and experience.  
 
 
 ## <a id="Solution"></a>Solution
 
 This two-sided marketplace creates the platform for the antiques and collecables enthusiasts to appraise their antiques and collectable items. This website will be the place where antique enthusiastic, like minded people get together.
 
-On the other hand antique enthusiastic who has knowlege about items will be able to make extra income by providing appraisal services with in this market place.
+The antique enthusiasts will get great benifits using this application. 
+They can get many appraisals from professional appraisers.
+The value of the item will increase depend on the number of appraisals. If the item  can get more appraisals means it will Obviously increase the value of the collectable.
+
+On the other hand Professional appraisers, antique enthusiastic who has knowlege about items,  will be able to get Ratings depend on the appraisal. The appraiser who makes the nearest value compared to current market value gets more ratings. 
+The appraiser's ratings are high means, this appraiser can make more accurate appraisal value.
+The appraiser gets paid according to their ratings.
 
 
 ## <a id="TrelloBoard"></a>Trello Board
@@ -336,6 +343,13 @@ end
 
 ```
 
+
+## <a id="Coding"></a>Coding
+
+### Coding Challenges
+
+- I started coding with pages controller, User registration and Shrine. 
+- I had many challenges and errors early in the coding phase. Monday was a really hard day for me and i had very slow progress during the day.
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
