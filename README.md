@@ -351,25 +351,15 @@ end
 - I started coding with pages controller, User registration and Shrine. 
 - I had many challenges and errors early in the coding phase. Monday was a really hard day for me and i had very slow progress during the day.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Then i moved to items and appraisals on Tuesday and i was having a good day with appraisals.
 
-Things you may want to cover:
+## <a id="FinalProduct"></a>Final Product
 
-* Ruby version
+![](/docs/images/TreasureFind_home.png)
+![](/docs/images/Treasure_List.png)
+![](/docs/images/List_Antiques.png)
+![](/docs/images/Appraisals.png)
+![](/docs/images/Our_appraisers.png)
+![](/docs/images/Sign_up.png)
+![](/docs/images/New_profile.png)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
