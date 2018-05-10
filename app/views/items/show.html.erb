@@ -51,11 +51,11 @@
 
 <h2>Appraisals</h2>
 <p>
-<strong>Average appraisal: </strong> <%= @item.average_appraisal_amount %>
+<strong>Average appraisal: AUD</strong> <%= @item.average_appraisal_amount %>
 </p>
 <ul>
 <% @appraisals.each do |appraisal| %>
-  <li><%= appraisal.value %></li>
+  <li> <strong> AUD </strong> <%= appraisal.value %></li>
 <% end %>
 </ul>
 

@@ -17,8 +17,11 @@
         <%= profile.category.name %><br/>
         <%= profile.user.email %><br/>
         <%= link_to 'Show', profile %><br/>
+<% if policy(Profile).edit? %>
         <%= link_to 'Edit', edit_profile_path(profile) %><br/>
-        <%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %><br/>
+<% end %>
+
+        
       </div>
     <% end %>
   </images>
