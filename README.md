@@ -1,9 +1,15 @@
 # README
 
-# Treasure Find Marketplace
-## https://floating-coast-28442.herokuapp.com/
+# Treasure Find Marketplace - Amila Daulagala.
+## heroku - https://floating-coast-28442.herokuapp.com/
 
-Treasure Find is for fans of antiques and collectables. It is a two-sided marketplace for antiques and collectables enthusiasts. Treasure Find has an Antiques and collectable Appraisals section. This Appraisal system helps users to find how much the item is actually worth. This website will be the place where antique enthusiastic, like minded people get together. They can offer a price to the listed vintage item. The users have to send a buy request if they are interested to buy antique or collectable items. 
+## github - https://github.com/milldaulagala/treasure_find
+
+## Authors
+
+Amila Daulagala.
+
+Treasure Find is for the fans of antiques and collectables. It is a two-sided marketplace for antiques and collectables enthusiasts. Treasure Find has an Antiques and collectable Appraisals section. This Appraisal system helps users to find how much their item is actually worth. This website will be the place where antique enthusiastic, like minded people get together. They could offer a price to the listed vintage item. The users have to send a buy request if they are interested to buy an antique or collectable item. 
 
 
 
@@ -25,11 +31,11 @@ Treasure Find is for fans of antiques and collectables. It is a two-sided market
 - **[Coding](#Coding)**
 - **[Optimisations](#Optimisations)**
 - **[Final Product](#FinalProduct)**
-- **[Presentation Slides](#PresentationSlides)**
+- **[Future development](#Futuredevelopment)**
 
 ## <a id="Problem"></a>Problem
 
-There are many antiques and collecables enthusiasts around the world. Most of the times they own valuable collectable pieces. They love to know the value of the item. Unfortunately there aren't many places to get an appraisal for the item. 
+There are many antiques and collecables enthusiasts around the world. Most of the times they own valuable, collectable pieces. They love to know the value of the item. Unfortunately there aren't many places to get an appraisal for the item. 
 
 On the other hand there are many antiques and collecables enthusiasts, professional appraisers who has an excellent knowledge about these items. They are willing to share their knowledge. They are looking for a proper platform to share their knowledge and experience.  
 
@@ -43,7 +49,7 @@ They can get many appraisals from professional appraisers.
 The value of the item will increase depend on the number of appraisals. If the item  can get more appraisals means it will Obviously increase the value of the collectable.
 
 On the other hand Professional appraisers, antique enthusiastic who has knowlege about items,  will be able to get Ratings depend on the appraisal. The appraiser who makes the nearest value compared to current market value gets more ratings. 
-The appraiser's ratings are high means, this appraiser can make more accurate appraisal value.
+The appraiser's ratings is high means, this appraiser can makes  accurate appraisal value.
 The appraiser gets paid according to their ratings.
 
 
@@ -57,7 +63,7 @@ The appraiser gets paid according to their ratings.
 My trello board is one of the main section of this rails project. It helped me to plan the project with User Stories, Models, Controllers, ERD and Wireframes. It helped me to determine the potential APIs and the gems that I need to build my rails project.
 
 ## <a id="UserStories"></a>User Stories
-My user stories are composed of 3 target markets (Guests, Owner of an antique or collectable item and Appraiser). Guests are the people who have not signed up for the application. Owners and Appraisers are registered users who can use the appraisal system. It is a two-sided marketplace. an antique item owner can be an appraiser and an appraiser can be a item owner.
+My user stories are composed of 3 target markets (Guests, Owner of an antique or collectable item and Appraiser). Guests are the people who have not signed up for the application. Owners and Appraisers are registered users who can use the appraisal system. It is a two-sided marketplace. An antique item owner can be an appraiser and an appraiser can be a item owner.
   
 ### Guests
 - In order to see what the marketplace is all about, as a guest, I want to search items and view antique item listings without   log in to the system.
@@ -68,7 +74,7 @@ My user stories are composed of 3 target markets (Guests, Owner of an antique or
 - In order to easily search an antique item,  as an owner, I want to use the search using keywords.
 - In order to list an antique item, as an owner, I want to have a user account. 
 - In order to list an item by category, as an item owner, I want to have category field to select.
-- In order to have an idea of the antique items that i can list, as an item owner, I want to see previous listings such as       featured, recently added.
+- In order to have an idea of the antique items that i can list, as an item owner, I want to see previous listings such as featured, recently added.
 - In order to know the full details of an antique item, as an owner, I want information on its show page.
 
 - In order to pay for the Appraisal, as an item owner, I want to make use of a payment feature which supports credit card.
@@ -86,14 +92,15 @@ My user stories are composed of 3 target markets (Guests, Owner of an antique or
 - In order to standout , as an appraiser, I need clear space to write my appraisals and valuations.
 - In order to get paid for my appraisals, as an appraiser, I want to be paid by credit card or transfer to my bank account.
 - In order to appraise an antique item , as an appraiser, I need to know the item type and category.
-- In order to standout , as an appraiser, I want to see other appraisals for the perticular product.
-- In order to answer inquiries about my appraisal, as an appraiser, I want owner to message me.
+- In order to standout , as an appraiser, I want to see other appraisals for the perticular item.
+- In order to answer inquiries about my appraisal, as an appraiser, I want the item owner to message me.
 - In order to report an issue, as an appraiser, I want a feature that I can message the Treasure Find administrator.
 
 
 ## <a id="ERD"></a>ERD
 The ERD is the most important section of this rails project. It took me some time to design the tables i need for this project. After i figured the tables out the next step was the identify relationships among them. This process helped me to understand the Rails models which will be using in the project. 
 
+[dbdesigner - Treasure Find](https://www.dbdesigner.net/designer/schema/167701)    
 ![](/docs/images/ERD.png)
 
 ## <a id="Models"></a>Models
@@ -298,7 +305,7 @@ One of the inspirations behind creating this Antiques and Collectables Appraisal
 - After the user stories it was clear that, Item owner can be an Appraiser. On the other hand Appraiser can be an item owner. 
 - Therefore i decided to have only one user account for the Treasure find application.
 - User Stories have helped me a lot in order to identify the functionalities. 
-- The major challenge was get the big picture of this appraisal system.
+- The major challenge was, get the big picture of this appraisal system.
 - After many scatches on my scrapbook, i was able to figure out the flow and functionlities.
 
 ### Database Design Challenges
@@ -317,9 +324,8 @@ It was a great learning experience.
 
 ![](/docs/images/generating_models.jpg)
 
-- It was a challenge and i decided to implement the User, Profile, Item, Category, Appraisal 
-models first.
-- 
+- It was a challenge and i decided to generate the User, Profile, Item, Category, Appraisal models first.
+- I will generate the Offer model, Bid model and Shopping model in future development.
 
 ## Getting an Average Appraisal value
 
@@ -327,7 +333,7 @@ models first.
 
 ![](/docs/images/average.jpg)
 
-- The average apprisal value calculated by adding all the appraisal values for a specific and divided by number of appraisals.
+- The average apprisal value calculated by adding all the appraisal values for a specific item and divided by number of appraisals.
 
 ```
 
@@ -352,6 +358,8 @@ end
 - I had many challenges and errors early in the coding phase. Monday was a really hard day for me and i had very slow progress during the day.
 
 - Then i moved to items and appraisals on Tuesday and i was having a good day with appraisals.
+- Most of the times research took lot of time during the coding. 
+
 
 ## <a id="FinalProduct"></a>Final Product
 
@@ -363,3 +371,15 @@ end
 ![](/docs/images/Sign_up.png)
 ![](/docs/images/New_profile.png)
 
+## <a id="Futuredevelopment"></a>Future development
+
+- Develop the Appraiser standout section based on accuracy of the appraisals, user reviews and ratings.
+
+- Develop the Offers section. This section will be very helpful for the users who are looking to buy an antique or collectable item. They can offer a price based on the appraisals. 
+
+- Develop the bidding section. If more than one offer for a specic item, then the item will place on the bidding section. The highest offer  will get the item. 
+
+## Lot of Thanks
+
+- I am grateful to Ruegen, Matt, Gretch and all the friends in the class.
+- It was challenging but with all the help and guidance, made the rails project succesful one.
