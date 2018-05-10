@@ -45,6 +45,7 @@ On the other hand antique enthusiastic who has knowlege about items will be able
 
 ![](/docs/images/trello.png)
 ![](/docs/images/trello2.png)
+![](/docs/images/Treasure_Find_flow_chart.png)
 
 My trello board is one of the main section of this rails project. It helped me to plan the project with User Stories, Models, Controllers, ERD and Wireframes. It helped me to determine the potential APIs and the gems that I need to build my rails project.
 
@@ -101,16 +102,7 @@ Appraisal
      - updated_at: datetime
     
     
-  
-
-Category
-    - name : string  
-    - description : text 
-    - item_id : bigint 
-    - created_at : datetime
-    - updated_at : datetime 
-    
-  
+     
 
 Item
     - name : string
@@ -165,6 +157,13 @@ Profile
      - created_at : datetime
      - updated_at : datetime
 
+     Category
+    - name : string  
+    - description : text 
+    - item_id : bigint 
+    - created_at : datetime
+    - updated_at : datetime 
+
 ```
 
 ## <a id="Controllers"></a>Controllers
@@ -213,9 +212,71 @@ My mood board is consist of rare antiques and collectables. Antique auctions and
 
 ![](/docs/images/moodboard.png)
 
+### Antique Bazaar
+![](/docs/images/AntiqueBazaar.png)
+
+### Barnebys
+![](/docs/images/Barnebys.png)
+
+## <a id="Inspiration"></a>Inspiration
+One of the inspirations behind creating this Antiques and Collectables Appraisal System is making a great platform for antiques and collectables enthusiasts. This two sided market place will be the place where like minded people get together. They will be able to make appraisals, see other appraiser's ratings and get an idea about current value of a perticular item.
+
+
+## <a id="Wireframes"></a>Wireframes
+[Figma - Treasure Find Wireframes](https://www.figma.com/file/KtUyYo50hrqbHeUQCJEpt0sY/Treasure_Find)
+
+### Appraisal Screen
+![](/docs/images/Appraisal_Screens.png)
+
+### Login Screen
+![](/docs/images/Login_Screen.png)
+
+### Mobile
+![](/docs/images/mobile.png)
+
+
+### Desktop Logo
+![](/docs/images/Desktop_logo.png)
+
+### Colour Scheme
+ It was a challenge to find a color scheme for Treasure Find appraisal application. Because this site will have many old collecatable items and antiques. It is very hard to have a color scheme in order to match with antiques items.
+ Finally i decide to go with vanilla, prune, orange-yellow, raisin black and white smoke.
+
+![](/docs/images/second_color_scheme.png)
+![](/docs/images/color_combination.png)
+![](/docs/images/Treasure_Find_Color_Scheme.png)
+
+## <a id="Features"></a>Features
+
+- View listed antiques and collectable items as a guest.
+- Signup as a user and create a profile.
+- login as a user and list an antique or collectable item which user own.
+- login as a user and update the profile.
+- login as a user and make an Appraisal for a listed item.
+- View all the appraisals for a specific listed item.
+- View the average appraisal value for a listed item.
+- Browse the listed antiques and collectable items using search funtion.
+- View all the appraisers profiles and their ratings.
+- Users can communicate each other using the email and messaging system. 
+- Users can offer a price to buy a listed item.
+- User can buy a listed item if the owner agrees to sell it at the offered price.
+- Users can pay for the transaction using secure payment gateway. 
 
 
 
+
+## <a id="RubyGem"></a>Ruby Gems I used in this Project
+
+- Devise
+- Rspec-rails 3.7
+- dotenv 2.4
+- mailgun_rails
+- Image_processing
+- Mini_magick
+- Shrine
+- Stripe
+- Pundit
+- pg
 
 
 
