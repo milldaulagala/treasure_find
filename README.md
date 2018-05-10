@@ -157,7 +157,7 @@ Profile
      - created_at : datetime
      - updated_at : datetime
 
-     Category
+  Category
     - name : string  
     - description : text 
     - item_id : bigint 
@@ -225,6 +225,9 @@ One of the inspirations behind creating this Antiques and Collectables Appraisal
 ## <a id="Wireframes"></a>Wireframes
 [Figma - Treasure Find Wireframes](https://www.figma.com/file/KtUyYo50hrqbHeUQCJEpt0sY/Treasure_Find)
 
+### Initial Wireframes
+![](/docs/images/Initial_wireframe.jpg)
+
 ### Appraisal Screen
 ![](/docs/images/Appraisal_Screens.png)
 
@@ -278,6 +281,60 @@ One of the inspirations behind creating this Antiques and Collectables Appraisal
 - Pundit
 - pg
 
+## <a id="Challenges"></a>Challenges
+
+###  Design Challenges
+
+- It was challenging to figure out the features of the Treasure find application.
+
+- Initally i wanted to have separate accounts for the appraiser and for the item owner. Then i started my user stories using trello board. 
+- After the user stories it was clear that, Item owner can be an Appraiser. On the other hand Appraiser can be an item owner. 
+- Therefore i decided to have only one user account for the Treasure find application.
+- User Stories have helped me a lot in order to identify the functionalities. 
+- The major challenge was get the big picture of this appraisal system.
+- After many scatches on my scrapbook, i was able to figure out the flow and functionlities.
+
+### Database Design Challenges
+
+### Initial Thinking about data models and tables
+![](/docs/images/data_model_initial.jpg)
+
+- My initial ER diagram didn't have the image_data column for Shrine. But i did figure it out before generate the models.
+
+- I spent few hours experimenting  a test appraisal data model with a item model.
+It was a great learning experience.
+
+### Generating Data model
+
+- I wanted to keep the Treasure find appraisal system simple and i used minimum number of Data models to do the job.
+
+![](/docs/images/generating_models.jpg)
+
+- It was a challenge and i decided to implement the User, Profile, Item, Category, Appraisal 
+models first.
+- 
+
+## Getting an Average Appraisal value
+
+- The key feature of the Treasure Find Appraisal application is calculate the average appraisal value. 
+
+![](/docs/images/average.jpg)
+
+- The average apprisal value calculated by adding all the appraisal values for a specific and divided by number of appraisals.
+
+```
+
+def average_appraisal_amount
+    self.appraisals.average(:value) 
+end
+
+```
+
+```
+<strong>Average appraisal: </strong> 
+<%= @item.average_appraisal_amount %>
+
+```
 
 
 This README would normally document whatever steps are necessary to get the
